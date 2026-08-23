@@ -1,0 +1,22 @@
+{
+	"name": "httpGit",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpGit",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "manishlawande1906/Azure-Data-Factory-Complex-ETL-Data-Integration-Solutions/refs/heads/main/Fact_Sales_2.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
