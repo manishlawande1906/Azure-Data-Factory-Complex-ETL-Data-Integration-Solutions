@@ -1,0 +1,15 @@
+{
+	"name": "ADF-ETL-manish",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "748c1d47-11b3-4d1a-ac7d-31bc0f8bcb15",
+		"tenantId": "79007744-6405-44d9-a873-aacc5f1cfd9a"
+	}
+}
