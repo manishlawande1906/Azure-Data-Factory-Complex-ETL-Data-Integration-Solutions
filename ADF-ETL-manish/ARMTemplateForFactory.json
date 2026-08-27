@@ -802,7 +802,7 @@
 					"recurrence": {
 						"frequency": "Minute",
 						"interval": 1,
-						"startTime": "2026-08-28T22:07:00",
+						"startTime": "2026-08-28T22:11:00",
 						"endTime": "2026-08-29T23:00:00",
 						"timeZone": "India Standard Time"
 					}
