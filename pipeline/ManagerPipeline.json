@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ManagerCopyData",
+						"referenceName": "CSV_source",
 						"type": "DatasetReference"
 					}
 				],
@@ -83,6 +83,12 @@
 					"dataset": {
 						"referenceName": "DeleteAfterCopy",
 						"type": "DatasetReference"
+					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "ls_datalake",
+							"type": "LinkedServiceReference"
+						}
 					},
 					"enableLogging": true,
 					"storeSettings": {
