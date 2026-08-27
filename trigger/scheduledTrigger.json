@@ -3,21 +3,14 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "pipelineCopySelectedFiles",
-					"type": "PipelineReference"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 1,
-				"startTime": "2026-08-27T22:30:00",
-				"endTime": "2026-08-29T23:00:00",
+				"startTime": "2026-08-27T20:17:00",
+				"endTime": "2026-08-28T08:00:00",
 				"timeZone": "India Standard Time"
 			}
 		}
