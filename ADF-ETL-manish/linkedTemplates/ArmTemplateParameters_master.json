@@ -14,6 +14,9 @@
 		"ls_datalake_properties_typeProperties_url": {
 			"value": "https://manishadfstorageaccount.dfs.core.windows.net/"
 		},
+		"ManagerTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/5648a860-139b-4653-82cb-2a5e09503af0/resourceGroups/ADF_ETL_Pipelines/providers/Microsoft.Storage/storageAccounts/manishadfstorageaccount"
+		},
 		"containerUri": {
 			"value": ""
 		},
