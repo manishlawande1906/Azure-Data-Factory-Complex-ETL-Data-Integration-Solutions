@@ -2,7 +2,7 @@
 	"name": "ManagerTrigger",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
@@ -13,7 +13,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/source/blobs/csv-files/Fact_Sales_1.csv",
+			"blobPathBeginsWith": "/source/blobs/csv-files/Fact_Sales_1",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/5648a860-139b-4653-82cb-2a5e09503af0/resourceGroups/ADF_ETL_Pipelines/providers/Microsoft.Storage/storageAccounts/manishadfstorageaccount",
 			"events": [
