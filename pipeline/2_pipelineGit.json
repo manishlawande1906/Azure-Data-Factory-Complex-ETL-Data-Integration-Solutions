@@ -1,9 +1,9 @@
 {
-	"name": "pipeline_cloud",
+	"name": "2_pipelineGit",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy CSV",
+				"name": "CopyGit",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -18,9 +18,8 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -49,13 +48,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "CSV_source",
+						"referenceName": "httpGit",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "CSV_destination",
+						"referenceName": "copycsvdatalake",
 						"type": "DatasetReference"
 					}
 				]

@@ -1,0 +1,12 @@
+{
+	"name": "ls_REST",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://pokeapi.co/api/v2/pokemon",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
