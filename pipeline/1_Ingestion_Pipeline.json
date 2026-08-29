@@ -162,6 +162,15 @@
 							"typeProperties": {
 								"source": {
 									"type": "JsonSource",
+									"additionalColumns": [
+										{
+											"name": "cdc_timestamp",
+											"value": {
+												"value": "@activity('MaxCDC').output.resultSets[0].rows[0].cdc_timestamp",
+												"type": "Expression"
+											}
+										}
+									],
 									"storeSettings": {
 										"type": "AzureBlobFSReadSettings",
 										"recursive": true,
@@ -223,7 +232,7 @@
 									{
 										"type": "Query",
 										"text": {
-											"value": "select max(last_updated) as last_timestamp from @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
+											"value": "select max(last_updated) as cdc_timestamp from @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
 											"type": "Expression"
 										}
 									}
