@@ -1,23 +1,22 @@
 {
-	"name": "ManagerCopyData",
+	"name": "Json_empty_cdc",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_datalake",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "DelimitedText",
+		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Fact_Sales_1.csv",
+				"fileName": "empty.json",
+				"folderPath": "monitor",
 				"fileSystem": "source"
-			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			}
 		},
-		"schema": []
+		"schema": {
+			"type": "object"
+		}
 	}
 }

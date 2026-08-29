@@ -1,23 +1,27 @@
 {
-	"name": "ManagerCopyData",
+	"name": "ds_cdc",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_datalake",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "DelimitedText",
+		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Fact_Sales_1.csv",
+				"fileName": "cdc.json",
+				"folderPath": "monitor",
 				"fileSystem": "source"
-			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			}
 		},
-		"schema": []
+		"schema": {
+			"type": "object",
+			"properties": {
+				"cdc_timestamp": {
+					"type": "string"
+				}
+			}
+		}
 	}
 }

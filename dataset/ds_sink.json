@@ -1,22 +1,19 @@
 {
-	"name": "ManagerCopyData",
+	"name": "ds_sink",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_datalake",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "DelimitedText",
+		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Fact_Sales_1.csv",
-				"fileSystem": "source"
+				"folderPath": "Orders",
+				"fileSystem": "sink"
 			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			"compressionCodec": "snappy"
 		},
 		"schema": []
 	}
