@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ManagerCopyData",
+						"referenceName": "CSV_source",
 						"type": "DatasetReference"
 					}
 				],
