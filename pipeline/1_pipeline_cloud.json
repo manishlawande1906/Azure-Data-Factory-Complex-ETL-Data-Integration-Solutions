@@ -1,5 +1,5 @@
 {
-	"name": "pipeline_cloud",
+	"name": "1_pipeline_cloud",
 	"properties": {
 		"activities": [
 			{

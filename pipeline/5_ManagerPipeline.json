@@ -1,5 +1,5 @@
 {
-	"name": "ManagerPipeline",
+	"name": "5_ManagerPipeline",
 	"properties": {
 		"activities": [
 			{
@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "CSV_source",
+						"referenceName": "ManagerCopyData",
 						"type": "DatasetReference"
 					}
 				],
@@ -115,7 +115,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "pipelineGit",
+						"referenceName": "2_pipelineGit",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true

@@ -1,5 +1,5 @@
 {
-	"name": "ScheduledPipeline",
+	"name": "8_ScheduledPipeline",
 	"properties": {
 		"activities": [
 			{
@@ -12,7 +12,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "1_Ingestion_Pipeline",
+						"referenceName": "7_Ingestion_Pipeline",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true

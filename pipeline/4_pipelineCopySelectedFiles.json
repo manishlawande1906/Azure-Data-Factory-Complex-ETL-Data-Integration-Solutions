@@ -1,5 +1,5 @@
 {
-	"name": "pipelineCopySelectedFiles",
+	"name": "4_pipelineCopySelectedFiles",
 	"properties": {
 		"activities": [
 			{

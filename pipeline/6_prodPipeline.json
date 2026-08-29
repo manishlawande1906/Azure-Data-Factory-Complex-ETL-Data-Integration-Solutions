@@ -1,5 +1,5 @@
 {
-	"name": "prodPipeline",
+	"name": "6_prodPipeline",
 	"properties": {
 		"activities": [
 			{
@@ -12,7 +12,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "ManagerPipeline",
+						"referenceName": "5_ManagerPipeline",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true
@@ -35,7 +35,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "pipelineCopySelectedFiles",
+						"referenceName": "4_pipelineCopySelectedFiles",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true
