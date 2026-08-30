@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADF-ETL-manish"
 		},
+		"ls_database_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_database'"
+		},
 		"ls_datalake_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_datalake'"
@@ -15,13 +19,25 @@
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com/"
 		},
+		"ls_REST_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://pokeapi.co/api/v2/pokemon"
+		},
+		"ls_database_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "adf-sql-srever.database.windows.net"
+		},
+		"ls_database_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "adf_etl_database"
+		},
+		"ls_database_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "manish-admin"
+		},
 		"ls_datalake_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://manishadfstorageaccount.dfs.core.windows.net/"
-		},
-		"ManagerTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/5648a860-139b-4653-82cb-2a5e09503af0/resourceGroups/ADF_ETL_Pipelines/providers/Microsoft.Storage/storageAccounts/manishadfstorageaccount"
 		},
 		"containerUri": {
 			"type": "string",
@@ -50,11 +66,26 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ls_database_password": {
+						"value": "[parameters('ls_database_password')]"
+					},
 					"ls_datalake_accountKey": {
 						"value": "[parameters('ls_datalake_accountKey')]"
 					},
 					"HttpGit_properties_typeProperties_url": {
 						"value": "[parameters('HttpGit_properties_typeProperties_url')]"
+					},
+					"ls_REST_properties_typeProperties_url": {
+						"value": "[parameters('ls_REST_properties_typeProperties_url')]"
+					},
+					"ls_database_properties_typeProperties_server": {
+						"value": "[parameters('ls_database_properties_typeProperties_server')]"
+					},
+					"ls_database_properties_typeProperties_database": {
+						"value": "[parameters('ls_database_properties_typeProperties_database')]"
+					},
+					"ls_database_properties_typeProperties_userName": {
+						"value": "[parameters('ls_database_properties_typeProperties_userName')]"
 					},
 					"ls_datalake_properties_typeProperties_url": {
 						"value": "[parameters('ls_datalake_properties_typeProperties_url')]"
@@ -76,9 +107,6 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
-					},
-					"ManagerTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('ManagerTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
